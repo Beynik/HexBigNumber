@@ -12,9 +12,11 @@ class MyBigNum
 {
 public:
 	void setHex(string str);
-	void setBinary(string str);
 	string getHex();
 	void ADD(MyBigNum* rez, MyBigNum* second);
+	bool compare(MyBigNum* second);
+	void SUB(MyBigNum* rez, MyBigNum* second);
+	void MOD(MyBigNum* rez, MyBigNum* second);
 	void print() {
 		std::cout << "hi";
 		for (int i = 0; i <= 255; i++) {
